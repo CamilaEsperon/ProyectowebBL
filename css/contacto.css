@@ -1,0 +1,65 @@
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    background-color: #fad0c488
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2rem;
+    padding: 30px;
+    padding-top:0;
+}
+
+.g-map{
+    width: 90%;
+    height: 18rem;
+}
+
+.contact-info{
+    width: 90%;
+}
+
+.formulario {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.error{
+    border-color: red;
+}
+.error-text{
+    color:red;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.submit-button{
+    background: rgba(222,162,165,255);
+    color: white;
+    border-radius: 3rem;
+
+}
+.submit-button:hover {
+    background-color:  rgba(179,103,121,255)!important;
+    color:white !important;
+}
+ 

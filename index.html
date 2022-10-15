@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio Web</title>
+    <title>Beauty Love Studio</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <!--Comenzamos con el body-->
 <body>
     <!--Aca ponemos los iconos con los enlaces-->
-    <div class="social media">
+    <!-- <div class="social media">
         <a href="https://api.whatsapp.com/send/?phone=5491135756543&text=Hola+BeautyLove+Studio.+Necesitaria+m%C3%A1s+informaci%C3%B3n+sobre+sus+servicios.&type=phone_number&app_absent=0" target="_blank" class="social-media-icon">
             <i class='bx bxl-whatsapp'></i>
             <a href="https://www.instagram.com/beautylove.estetica/" target="_blank" class="social-media-icon">
@@ -25,7 +31,7 @@
             <i class='bx bx-envelope' ></i>
 </a>
 </a>
-</div>
+</div> -->
 </div>
     <header class="header" id="inicio">
         <!--Barra de Navegacion-->
@@ -104,19 +110,78 @@
             <img src="img/close.svg" alt="cerrar" class="close">
             <img src="" alt="" class="agregar-imagen">
         </section>
+
+        <!--Seccion para formulario contacto-->
+        <section class="contenedor"  id="contacto">
+            <h2 class="subtitulo"><b>Contactanos</b></h2>
+            <section class="contact">
+                <div class="col-12 col-md-6 info">
+                     <!--<p>Somos un centro de servicios personalizados con un importante staff de profesionales.</p>
+                     <p>Si queres saber mas sobre nuestros tratamientos envianos tu consulta.</p>
+                     <p>Si queres solicitar un turno elegi el tratamiento y el horario que prefieras y te contactaremos para confirmarte.</p>
+                     <p>No dudes en consultar sobre opciones promocionales y recordá que pagando en efectivo tenes importantes descuentos.</p>
+                     -->
+                     <div class="contact-info">
+                        <p>Si queres saber mas sobre nuestros tratamientos envianos tu consulta.</p>
+                        <p>Si queres solicitar un turno elegi el tratamiento y el horario que prefieras y te contactaremos para confirmarte.</p>
+                        <p>No dudes en consultar sobre opciones promocionales y recordá que pagando en efectivo tenes importantes descuentos.</p>
+                        <p>Lunes a Sabados de 8 a 19.</p>
+                        <p>Encontranos en ... </p>
+                     </div>
+                     <div class="g-map">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26252.51122379729!2d-58.531674349999996!3d-34.66571485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc88cab9fc017%3A0xd9ec257a99a78933!2sLomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1664719675211!5m2!1ses-419!2sar" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                </div>
+                <div class="col-12 col-md-6 formulario">
+                     <form class="form" action="https://formspree.io/f/xdojdrwv" method="POST"
+                      id="contactForm" name="contactForm" novalidate>
+                         <div class="mb-3">
+                             <label for="name" class="form-label">Nombre*</label>
+                             <input type="text" class="form-control" name="Nombre" id="name" placeholder="Nombre">
+                         </div>
+         
+                         <div class="mb-3">
+                             <label for="email" class="form-label">Correo electronico*</label>
+                             <input type="email" class="form-control" name="Email" id="email" placeholder="nombre@ejemplo.com">
+                         </div>
+         
+                         <div class="form-check mb-3" id="checkbox">
+                             <input onclick="changeForm(this)"  class="form-check-input" 
+                             type="checkbox" name="Sacar Turno" id="check">
+                             <label class="form-check-label" for="check">
+                               Sacar turno
+                             </label>
+                         </div>
+                        
+                     
+                         <div class="mb-3">
+                             <label for="mensaje" class="form-label">Mensaje</label>
+                             <textarea class="form-control" name="Mesaje" id="mensaje" rows="3"></textarea>
+                         </div> 
+                         <div class="actions">
+                             <button  class="btn submit-button" type="submit" >Enviar</button>         
+                         </div> 
+                     </form>
+                </div>
+             </div>
+             
+        </section>
+
      </main>
+
    
 <!--Comenzamos con el footer-->
-    <footer id="contacto">
+    <footer >
         <div class="contenedor footer-content">
             <div class="contact-us">
-                <h2 class="brand">Contactanos</h2>
-                <p>Beauty Love, espacio creado para vos.</p>
+                <!-- <h2 class="brand">Contactanos</h2> -->
+                <img src="./img/logo.11.png" class="logo-image">
+                Beauty Love, espacio creado para vos.
             </div>
             <!--Aca ponemos los iconos con los enlaces-->
-            <div class="social media">
+            <div class="social-media">
                 <a href="https://api.whatsapp.com/send/?phone=5491135756543&text=Hola+BeautyLove+Studio.+Necesitaria+m%C3%A1s+informaci%C3%B3n+sobre+sus+servicios.&type=phone_number&app_absent=0" target="_blank" class="social-media-icon">
-                    <i class='bx bxl-whatsapp'></i>
+                    <i class='bx bxl-whatsapp '></i>
                     <a href="https://www.instagram.com/beautylove.estetica/" target="_blank" class="social-media-icon">
                     <i class='bx bxl-instagram'></i>
                     <a href="mailto:beautylove.estudio@hotmail.com" target="_blank" class="social-media-icon">
@@ -130,6 +195,9 @@
    <!--Aca vinculamos html con las carperas de js-->
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 
     
 </body>

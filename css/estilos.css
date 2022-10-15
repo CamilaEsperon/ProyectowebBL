@@ -255,8 +255,9 @@ footer{
 
 .footer-content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+   /* justify-content: space-between;
+    align-items: center;*/
     flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -264,8 +265,17 @@ footer{
 
 .contact-us{
     width: 40%;
-    color: rgb(51, 8, 8)
+    color: rgb(51, 8, 8);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
+}
+
+.logo-image{
+    object-fit: cover;
+    width: 4rem;
+    margin-right: 0.5rem;
 }
 
 .brand{
@@ -280,29 +290,33 @@ footer{
 .social-media{
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    margin-top:1rem;
 }
 
 .social-media-icon{
     display: inline-block;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 60px;
     height: 60px;
-    border: 1px solid rgba(17, 2, 2, 0.521);
-    border-radius: 50%;
+    /* border: 1px solid rgba(17, 2, 2, 0.521);
+    border-radius: 50%; */
     text-align: center;
     color: rgb(44, 19, 39);
 
 }
 
-.social-media-icon:hover{
+.social-media-icon i:hover{
     background: rosybrown;
     color: #200920;
 }
 
 .social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 5px;
+    /* border: 1px solid rgba(17, 2, 2, 0.521); */
+    border-radius: 50%;
 }
 
 .line{
