@@ -23,7 +23,7 @@ body{
 /*imagen del logo y propiedades*/
 header{
     height: 100vh;
-    background-image: url(../img/logo.10.jpg);
+    background-image: url(../img/lulu.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -49,7 +49,7 @@ header{
     z-index: 10;
     top: 30px;
     right: 30px;
-    background: rgb(192, 140, 140);
+    background: rgb(231, 188, 188);
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -66,7 +66,7 @@ header{
    right: 0; 
    width: 30vw;
    height: 100%;
-   background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+   background-image: linear-gradient(45deg, #f1afb1 0%, #e0baaf 99%, #fad0c4 100%);
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
@@ -136,7 +136,7 @@ header{
 .n-nos{
     font-size: 100px;
     margin-bottom: 30px;
-    color: black
+    color: rosybrown
 }
 
 
