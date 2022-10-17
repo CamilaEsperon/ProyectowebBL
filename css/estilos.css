@@ -84,6 +84,18 @@ header{
 
 }
 
+.menu-navegacion :hover{
+    font-size: 170%;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    transition: transform .20s ease-in-out;
+    background-color: #ff9a9e;
+    border-radius: 15px;
+   
+}
+
 /*Propiedades para mi titulo, en mi caso lo saque*/
 .titulo{
     font-size: 100px;
@@ -96,7 +108,7 @@ header{
     text-align: center;
     font-weight: 300;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 60px;
     color: rosybrown;
 }
 
@@ -158,13 +170,18 @@ header{
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 15px
 }
 
 .cont-serv img{
     width: 80%;
     display: block;
     margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.4);
+    overflow: hidden;
 }
+
 .n-serv{
     display: inline-block;
     margin-top: 20px;
@@ -185,22 +202,29 @@ header{
     
 }
 .contenedor-galeria{
+    padding-top: 20px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-image: linear-gradient(to top, rgba(250, 208, 196, 0.493) 0%, rgba(255, 209, 255, 0.507) 100%), url(../img/logo.10.jpg);
 }
 
+
 .img-galeria{
     object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0,0,0, .5);
+    box-shadow: 0 0 6px rgba(0,0,0, .4);
     cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-
+.img-galeria :hover{
+    font-size: 110%;
+}
 
 
 
@@ -319,6 +343,14 @@ footer{
 @media screen and (max-width:800px){
     .menu-navegacion{
         width: 50vw;
+    }
+
+    .menu-navegacion :hover{
+        font-size: 150%;
+        padding-left: 25px;
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-bottom: 5px;
     }
 
     .titulo{
