@@ -55,6 +55,7 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0,0,0, .5);
+    z-index: 2;
 
 }
 
@@ -74,6 +75,7 @@ header{
    transition: transform .3s ease-in-out;
    transform: translate(110%);
    box-shadow: 0 0 6px rgba(0,0,0, .5);
+   z-index:1
 }
 .spread{
     transform: translate(0);
@@ -164,6 +166,20 @@ header{
     width: 80%;
     display: block;
     margin: auto;
+}
+
+.card-services{
+    width: 80%;
+    text-align: center;
+}
+.card-services img{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius:0.5rem;
 }
 .n-serv{
     display: inline-block;
@@ -331,6 +347,9 @@ footer{
 
 /*Comenzamos a trabajar sobre medidas*/
 @media screen and (max-width:800px){
+    header{
+        background-size: contain;
+    }
     .menu-navegacion{
         width: 50vw;
     }
@@ -366,7 +385,7 @@ footer{
     }
     .social-media{
         width: 80%;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
     .social-media-icon{
         margin-left: 0;
@@ -387,6 +406,9 @@ footer{
  
  /*Comenzamos a adaptar a mobile*/
  @media screen and (max-width:500px){
+        header{
+            background-size: contain;
+        }
         .menu-navegacion{
             width: 65vw;
         }
