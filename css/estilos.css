@@ -221,6 +221,7 @@ header{
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-image: linear-gradient(to top, rgba(250, 208, 196, 0.493) 0%, rgba(255, 209, 255, 0.507) 100%), url(../img/logo.10.jpg);
+    padding-top: 15px;
 }
 
 .img-galeria{
