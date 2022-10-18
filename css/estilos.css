@@ -27,7 +27,7 @@ header{
     background-image: url(../img/lulu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
 
 }
@@ -88,7 +88,7 @@ header{
 }
 
 .menu-navegacion :hover{
-    font-size: 170%;
+    font-size: 120%;
     padding-left: 15px;
     padding-top: 5px;
     padding-right: 15px;
@@ -429,6 +429,8 @@ footer{
         header{
             /*background-size: contain;*/
             background-image: url(../img/lulu2.png);
+            height: 800px;
+            background-attachment: inherit;
         }
         .menu-navegacion{
             width: 65vw;
