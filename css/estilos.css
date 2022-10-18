@@ -285,6 +285,11 @@ header{
 footer{
     background-image: url(../img/1.png);
     padding-bottom: 0.1px;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-content{
@@ -373,7 +378,7 @@ footer{
     }
 
     .menu-navegacion :hover{
-        font-size: 150%;
+        font-size: 120%;
     }
 
     .titulo{
@@ -432,6 +437,10 @@ footer{
             height: 800px;
             background-attachment: inherit;
         }
+        footer{
+            background-position: -18rem;
+            height: 300px;
+        }
         .menu-navegacion{
             width: 65vw;
         }
@@ -454,6 +463,7 @@ footer{
 
         .social-media{
             width: 100%;
+            padding-top: 3.5rem;
         }
         
         .contact-us{
