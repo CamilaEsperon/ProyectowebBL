@@ -22,11 +22,12 @@ body{
 
 /*imagen del logo y propiedades*/
 header{
-    height: 100vh;
+    height: 1000px;
+    width: 100%;
     background-image: url(../img/lulu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-position: center;
 
 }
@@ -75,7 +76,8 @@ header{
    transition: transform .3s ease-in-out;
    transform: translate(110%);
    box-shadow: 0 0 6px rgba(0,0,0, .5);
-   z-index:1
+   z-index:1;
+   font-size: 30px;
 }
 .spread{
     transform: translate(0);
@@ -83,7 +85,18 @@ header{
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+}
 
+.menu-navegacion :hover{
+    font-size: 170%;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    transition: transform .20s ease-in-out;
+    background-color: #ff9a9e;
+    border-radius: 15px;
+   
 }
 
 /*Propiedades para mi titulo, en mi caso lo saque*/
@@ -160,12 +173,15 @@ header{
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 .cont-serv img{
     width: 80%;
     display: block;
     margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.4);
 }
 
 .card-services{
@@ -214,6 +230,7 @@ header{
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(0,0,0, .5);
     cursor: pointer;
+    border-radius: 15px;
 }
 
 
@@ -349,10 +366,17 @@ footer{
 @media screen and (max-width:800px){
     header{
         /*background-size: contain;*/
-        background-image: url(../img/lulu2.png);
     }
     .menu-navegacion{
         width: 50vw;
+    }
+
+    .menu-navegacion :hover{
+        font-size: 150%;
+        padding-left: 25px;
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-bottom: 5px;
     }
 
     .titulo{
@@ -402,8 +426,6 @@ footer{
  }
 
    
- 
- 
  
  /*Comenzamos a adaptar a mobile*/
  @media screen and (max-width:500px){
