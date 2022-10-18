@@ -27,7 +27,7 @@ header{
     background-image: url(../img/lulu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
 
 }
