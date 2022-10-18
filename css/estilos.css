@@ -348,7 +348,8 @@ footer{
 /*Comenzamos a trabajar sobre medidas*/
 @media screen and (max-width:800px){
     header{
-        background-size: contain;
+        /*background-size: contain;*/
+        background-image: url(../img/lulu2.png);
     }
     .menu-navegacion{
         width: 50vw;
@@ -407,7 +408,8 @@ footer{
  /*Comenzamos a adaptar a mobile*/
  @media screen and (max-width:500px){
         header{
-            background-size: contain;
+            /*background-size: contain;*/
+            background-image: url(../img/lulu2.png);
         }
         .menu-navegacion{
             width: 65vw;
