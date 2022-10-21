@@ -24,12 +24,12 @@ body{
 header{
     height: 1000px;
     width: 100%;
-    /*background-image: url(../img/lulu.png);*/
+    background-image: url(../img/lulu.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    $carousel-control-transition: opacity .3s ease;
+    /* $carousel-control-transition: opacity .3s ease; */
 
 }
 
@@ -129,19 +129,18 @@ header{
     flex-wrap: wrap;
     color: black;
     font-size: 20px;
-    background: #fad0c488
-    
-  
-  }
+    background: #fad0c488;
+    }
    
     .contenedor-nosotros img{
-    width: 50%;
-   
-   
-}
+    width: 100%;
+    }
+
 /*Medidas para texto de al lado de la img*/
 .checklist-nosotros{
-    width: 45%
+     width: 90%;
+
+    
 
 }
 
@@ -152,7 +151,9 @@ header{
 .n-nos{
     font-size: 100px;
     margin-bottom: 30px;
-    color: rosybrown
+    color: rosybrown;
+    text-decoration: none;
+    text-align:left;
 }
 
 
