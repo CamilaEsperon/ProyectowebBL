@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </head>
 
@@ -36,7 +37,36 @@
 </div>
     <header class="header" id="inicio">
         <!--Barra de Navegacion-->
-        <img src="img/holamm.svg" alt="" class="holamm">
+       <img src="img/holamm.svg" alt="" class="holamm">
+       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/lulu.png" class="d-block w-100" alt="700px">
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/lulu3.jpg" class="d-block w-100" alt="700px">
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/lulu4.jpg" class="d-block w-100" alt="700px">
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+          <img src="img/lulu5.jpg" class="d-block w-100" alt="700px">
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+          <img src="img/lulu6.jpg" class="d-block w-100" alt="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         <nav class="menu-navegacion">
             <a href="#inicio"><b>Inicio</b></a>
             <a href="#Nosotros"><b>Nosotros</b></a>

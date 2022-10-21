@@ -24,11 +24,12 @@ body{
 header{
     height: 1000px;
     width: 100%;
-    background-image: url(../img/lulu.png);
+    /*background-image: url(../img/lulu.png);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    $carousel-control-transition: opacity .3s ease;
 
 }
 
