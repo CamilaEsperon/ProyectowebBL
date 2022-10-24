@@ -29,7 +29,6 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    $carousel-control-transition: opacity .3s ease;
 
 }
 
@@ -122,6 +121,8 @@ header{
 
 
 /*Comienzo a darle estilo a seccion Sobre Nosotros*/
+
+
 .contenedor-nosotros{
     display: flex;
     justify-content: space-evenly;
@@ -130,17 +131,20 @@ header{
     color: black;
     font-size: 20px;
     background: #fad0c488;
-    }
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+    
    
     .contenedor-nosotros img{
-    width: 100%;
+    height: 100%;
     }
 
 /*Medidas para texto de al lado de la img*/
 .checklist-nosotros{
      width: 90%;
-
-    
+     padding-left: 20px;
+     padding-right: 20px;
 
 }
 
@@ -157,11 +161,6 @@ header{
 }
 
 
-
-
-
-
-
 /*Comenzamos con la seccion de Servicios*/
 .servicios{
     display: flex;
@@ -171,11 +170,13 @@ header{
     background-color: #fad0c488
 }
 
+
 .cont-serv{
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
     padding-top: 15px;
+    
 }
 
 .cont-serv img{
@@ -184,11 +185,14 @@ header{
     margin: auto;
     border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0,0,0, 0.4);
+    padding-left: 5px;
+    position: relative;
 }
 
 .card-services{
     width: 80%;
     text-align: center;
+
 }
 .card-services img{
     width: 14rem;
@@ -197,7 +201,7 @@ header{
     display: block;
     margin: auto;
     margin-top: 1rem;
-    border-radius:0.5rem;
+    border-radius: 0.5em;
 }
 .n-serv{
     display: inline-block;
@@ -279,9 +283,30 @@ header{
     cursor: pointer;
 }
 
+/* seccion de tips de cuidados */
+.tips{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fad0c488;
+    
+}
 
+.card-servicesC{
+    width: 80%;
+    text-align: center;
 
-
+}
+.card-servicesC img{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 90%;
+}
 
 /*Comenzamos a darle estilo al footer*/
 footer{
@@ -387,11 +412,20 @@ footer{
         font-size: 40px;
     }
     .contenedor-nosotros img{
-        width: 80%;
-        margin-bottom: 40px;
+    height: 100%;
+    width: 200%;
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
     }
     .checklist-nosotros{
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color:rgba(255, 255, 255, 0.76);
 
     }
     .nos{
@@ -477,4 +511,6 @@ footer{
         }
 
     }
+
+/*******************************************/
 
