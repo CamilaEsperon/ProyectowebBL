@@ -117,12 +117,7 @@ header{
 
 
 
-
-
-
 /*Comienzo a darle estilo a seccion Sobre Nosotros*/
-
-
 .contenedor-nosotros{
     display: flex;
     justify-content: space-evenly;
